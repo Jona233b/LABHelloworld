@@ -31,7 +31,7 @@ namespace Opgave02
 
             Console.WriteLine(maxInt);
             Console.WriteLine(minInt);
-            //blablabla
+            //blablabla he hej 
 
 
         }
