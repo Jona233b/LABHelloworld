@@ -6,7 +6,26 @@ namespace LABHelloworld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            {
+                string schoolName;
+                schoolName = "AspIT";
+
+                Console.WriteLine(schoolName);
+
+                schoolName = "AspIT - Nordjylland";
+
+                Console.WriteLine(schoolName);
+
+                string motto = "Fokuseret Talent";
+
+                Console.Write( schoolName );
+                Console.Write("");
+                Console.WriteLine(motto);
+                Console.WriteLine($"{schoolName}{motto}");
+
+
+
+            }
         }
     }
 }
