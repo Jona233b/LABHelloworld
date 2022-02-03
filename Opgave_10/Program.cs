@@ -11,8 +11,9 @@ namespace Opgave_10
             Console.WriteLine("kan du finde fem dyr på min liste?");
             Console.Write("skriv et dyr: ");
             string dyr = Console.ReadLine();
+            string lowerMenuvalg = dyr.ToLower();
 
-            switch (dyr)
+            switch (lowerMenuvalg)
             {
                 case "undulat":
                     Console.WriteLine("Undulaten (Melopsittacus undulatus) er en lille papegøje, der stammer fra Australien. Arten er den eneste i slægten Melopsittacus." +
