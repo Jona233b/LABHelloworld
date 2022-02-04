@@ -8,6 +8,7 @@ namespace Opgave_05
         {
             double tal1 = 0;
             double tal2 = 0;
+            
 
             Console.WriteLine("Console Calculator Med C#");
 
@@ -22,26 +23,35 @@ namespace Opgave_05
             Console.WriteLine("\t2 - Minus");
             Console.WriteLine("\t3 - Gange");
             Console.WriteLine("\t4 - Divider");
+            Console.WriteLine("\t5 - slut");
             Console.Write("Din mulighed?: ");
-
-            switch (Console.ReadLine())
+            bool end = false;
+            while (end == false)
             {
-                case "1":
-                    Console.WriteLine($"Dit resultat: {tal1} + {tal2} = " + (tal1 + tal2));
-                    break;
-                case "2":
-                    Console.WriteLine($"Dit resultat: {tal1} - {tal2} = " + (tal1 - tal2));
-                    break;
-                case "3":
-                    Console.WriteLine($"Dit resultat: {tal1} * {tal2} = " + (tal1 * tal2));
-                    break;
-                case "4":
-                    Console.WriteLine($"Dit resultat: {tal1} / {tal2} = " + (tal1 / tal2));
-                    break;
-            }
 
-            Console.Write("Tryk på en vilkårlig tast for at lukke Appen...");
-            Console.ReadKey();
+
+                switch (Console.ReadLine())
+                {
+                    case "1":
+                        Console.WriteLine($"Dit resultat: {tal1} + {tal2} = " + (tal1 + tal2));
+                        break;
+                    case "2":
+                        Console.WriteLine($"Dit resultat: {tal1} - {tal2} = " + (tal1 - tal2));
+                        break;
+                    case "3":
+                        Console.WriteLine($"Dit resultat: {tal1} * {tal2} = " + (tal1 * tal2));
+                        break;
+                    case "4":
+                        Console.WriteLine($"Dit resultat: {tal1} / {tal2} = " + (tal1 / tal2));
+                        break;
+                    case "5":
+                        end = true;
+                        Console.WriteLine("Program sluter");
+                        break;
+                }
+                
+                
+            }
 
         }
     }
