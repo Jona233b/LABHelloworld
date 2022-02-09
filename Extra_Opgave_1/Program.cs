@@ -7,18 +7,16 @@ namespace Extra_Opgave_1
         static void Main(string[] args)
         {
             int i = 0;
+            int input = 0;
 
-            while (i < 10)
+            while (i < 5)
             {
-                Console.Write("While statment: ");
-                Console.WriteLine(i);
+                Console.Write("Intast et tal: ");
+                int tal = Convert.ToInt32(Console.ReadLine());
+                input = input + tal;
                 i++;
-
-                if (i == 10)
-                {
-                    Console.WriteLine("Denne løkke har kørt 10 gange.");
-                }
             }
-        }
+            Console.WriteLine($"Resultatet af tallene {input}");
+        }   
     }
 }
