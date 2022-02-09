@@ -32,6 +32,22 @@ namespace Opgave_12
             
             int Tilfældig = rand.Next(1, 7);
             Console.WriteLine(Tilfældig);
+
+            // Opg. 12.3
+            Console.WriteLine("\nKodeforslag til Jonas:");
+            int tabel = 1;
+
+
+
+            for (int j = 1; j <= 20; j++)
+            {
+                for (int i = tabel; i <= tabel * 20; i += j)
+                {
+                    Console.Write(i.ToString().PadLeft(4));
+                }
+                Console.WriteLine();
+                tabel++;
+            }
         }
     }
 }
