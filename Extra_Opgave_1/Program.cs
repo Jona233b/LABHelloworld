@@ -17,6 +17,7 @@ namespace Extra_Opgave_1
                 i++;
             }
             Console.WriteLine($"Resultatet af tallene {input}");
+
         }   
     }
 }
